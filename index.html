@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Cells</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .row {
+            height: 100px;
+            margin: 0px;
+        }
+
+        .col {
+            width: 100px;
+            padding: 0px;
+        }
+
+        .cell {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row"></div>
+    <div class="row">
+        <div class="col">
+            <div class="cell" id="row0col0"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row0col1"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row0col2"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row0col3"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row0col4"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="cell" id="row1col0"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row1col1"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row1col2"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row1col3"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row1col4"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="cell" id="row2col0"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row2col1"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row2col2"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row2col3"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row2col4"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="cell" id="row3col0"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row3col1"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row3col2"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row3col3"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row3col4"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="cell" id="row4col0"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row4col1"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row4col2"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row4col3"></div>
+        </div>
+        <div class="col">
+            <div class="cell" id="row4col4"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAaZsU5CvtJw-2GtgORAlGQP12Mjj-kZbE",
+        authDomain: "gdgmxdemoct.firebaseapp.com",
+        databaseURL: "https://gdgmxdemoct.firebaseio.com",
+        projectId: "gdgmxdemoct",
+        storageBucket: "gdgmxdemoct.appspot.com",
+        messagingSenderId: "283828693723",
+        appId: "1:283828693723:web:9593d62f2e640c4d86bafe"
+    };
+    // Initialize Firebase
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
