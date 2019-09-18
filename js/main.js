@@ -19,7 +19,7 @@ function lut(color) {
         return 'purple';
     if(color == 8)
         return 'gray';
-    return 'white;'
+    return 'white';
 }
 
 window.onload = function () {
