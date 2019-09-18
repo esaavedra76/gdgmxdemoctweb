@@ -2,22 +2,24 @@ console.log('init');
 
 function lut(color) {
     if(color == 0)
-        return 'white';
+        return 'black';
     if(color == 1)
-        return 'red';
+        return '#4F2400';
     if(color == 2)
-        return 'orange';
+        return 'red';
     if(color == 3)
-        return 'yellow';
+        return 'orange';
     if(color == 4)
-        return 'green';
+        return 'yellow';
     if(color == 5)
-        return 'blue';
+        return 'green';
     if(color == 6)
-        return 'purple';
+        return 'blue';
     if(color == 7)
+        return 'purple';
+    if(color == 8)
         return 'gray';
-    return 'black;'
+    return 'white;'
 }
 
 window.onload = function () {
